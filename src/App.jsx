@@ -1,7 +1,7 @@
 import { useState } from "react";
 import Header from "./header";
-import Meteorlist from "./meteorlist";
-import Meteorsearch from "./meteorsearch";
+import MeteorList from "./meteorlist";
+import MeteorSearch from "./meteorsearch";
 import "./App.css";
 
 const App = () => {
@@ -10,8 +10,8 @@ const App = () => {
     <div className="app">
       <h1>Test</h1>
       <Header />
-      <Meteorlist />
-      <Meteorsearch />
+      <MeteorList />
+      <MeteorSearch />
     </div>
   );
 };
