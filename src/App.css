@@ -1,0 +1,15 @@
+.app {
+  border: 2px solid red;
+}
+
+.header {
+  border: 2px solid blue;
+}
+
+.meteorSearch {
+  border: 2px solid yellow;
+}
+
+.meteorList {
+  border: 2px solid green;
+}
