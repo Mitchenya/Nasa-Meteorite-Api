@@ -10,7 +10,7 @@ const MeteorList = () => {
 
   useEffect(() => {
     setIsLoading(true);
-    fetch(`https://data.nasa.gov/resource/gh4g-9sfh.json?$limit=100`)
+    fetch(`https://data.nasa.gov/resource/gh4g-9sfh.json?$limit=5`)
       .then((response) => {
         return response.json();
       })
