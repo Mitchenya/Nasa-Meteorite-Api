@@ -3,7 +3,7 @@ const Header = () => {
     <div className="header">
       <h1>Destinations Impacted by Meteorites Over The Years.</h1>
       <div className="logo">
-        <img className="logo-size" src="meteor_logo_white.png" />
+        <img className="logo-size" src="src/assets/meteor_logo_white.png" />
       </div>
     </div>
   );
