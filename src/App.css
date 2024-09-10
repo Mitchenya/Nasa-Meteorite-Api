@@ -18,9 +18,14 @@ body {
   display: flex;
 }
 
-.meteorList {
+.meteor-list {
   border: 2px solid green;
   width: 50%;
+}
+
+.meteor-card {
+  border: solid 2px red;
+  text-align: center;
 }
 
 .map {
@@ -37,4 +42,12 @@ body {
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
+  list-style-type: none;
+  padding: 10px;
+  margin: 0;
+}
+
+.list-ul li {
+  flex: 1 1 calc(50% - 20px);
+  box-sizing: border-box;
 }

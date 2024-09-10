@@ -45,7 +45,7 @@ const MeteorList = () => {
   }
 
   return (
-    <div className="meteorList">
+    <div className="meteor-list">
       <label htmlFor="sort-direction">Sort by name:</label>
       <select
         id="sort-direction"

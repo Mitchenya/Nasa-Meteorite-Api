@@ -1,6 +1,6 @@
 import mapboxgl from "mapbox-gl";
 import "mapbox-gl/dist/mapbox-gl.css";
-import React, { useRef, useEffect, useState } from "react";
+import { useRef, useEffect, useState } from "react";
 
 mapboxgl.accessToken =
   "pk.eyJ1IjoibWl0Y2hlbnlhIiwiYSI6ImNtMHY1MDQ5eTE1NXUycXI2OGhqN2w4eTEifQ.wv1jXe9GC7tWCIEd4QEEdQ";
@@ -10,7 +10,7 @@ const MapComponent = () => {
   const mapInstance = useRef(null);
   const [lat, setLat] = useState("53.47203");
   const [lng, setLng] = useState("-2.23831");
-  const [zoom, setZoom] = useState(14);
+  const [zoom] = useState(14);
 
   useEffect(() => {
     mapInstance.current = new mapboxgl.Map({
@@ -39,7 +39,7 @@ const MapComponent = () => {
   };
 
   return (
-    <div className="map">
+    <div>
       <form onSubmit={handleSearch} style={{ marginBottom: "20px" }}>
         <label>
           Latitude:

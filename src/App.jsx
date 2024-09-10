@@ -1,4 +1,3 @@
-import React, { useRef, useEffect, useState } from "react";
 import Header from "./header";
 import MeteorList from "./meteorlist";
 import "./App.css";
