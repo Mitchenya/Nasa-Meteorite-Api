@@ -39,7 +39,7 @@ const MapComponent = () => {
   };
 
   return (
-    <div>
+    <div className="map">
       <form onSubmit={handleSearch} style={{ marginBottom: "20px" }}>
         <label>
           Latitude:

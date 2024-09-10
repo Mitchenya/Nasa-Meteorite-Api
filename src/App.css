@@ -7,8 +7,34 @@ body {
   border: 2px solid red;
   width: 100%;
   margin: 0;
+}
 
 .header {
+  border: 2px solid green;
+  padding: 20px;
   border-radius: 5px 5px 5px 5px;
   height: 50px;
+  align-items: center;
+  display: flex;
+}
+
+.meteorList {
+  border: 2px solid green;
+  width: 50%;
+}
+
+.map {
+  border: 2px solid yellow;
+  width: 50%;
+  left: 0;
+}
+
+.main {
+  display: flex;
+}
+
+.list-ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
 }

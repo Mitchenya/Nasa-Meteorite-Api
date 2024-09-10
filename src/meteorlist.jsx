@@ -45,7 +45,7 @@ const MeteorList = () => {
   }
 
   return (
-    <div>
+    <div className="meteorList">
       <label htmlFor="sort-direction">Sort by name:</label>
       <select
         id="sort-direction"
@@ -55,7 +55,7 @@ const MeteorList = () => {
         <option value="asc">A-Z</option>
         <option value="desc">Z-A</option>
       </select>
-      <ul>
+      <ul className="list-ul">
         {sortedMeteors.map((meteor) => {
           return <MeteorCard key={meteor.name} meteor={meteor} />;
         })}

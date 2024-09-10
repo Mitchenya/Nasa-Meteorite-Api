@@ -8,8 +8,10 @@ const App = () => {
   return (
     <div className="app">
       <Header />
-      <MeteorList />
-      <MapComponent />
+      <section className="main">
+        <MeteorList />
+        <MapComponent />
+      </section>
     </div>
   );
 };
