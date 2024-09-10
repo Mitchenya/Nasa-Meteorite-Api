@@ -58,7 +58,7 @@ const MapComponent = () => {
       >
         <div className="label">
           <label>
-            Latitude:
+            <div className="label">Latitude:</div>
             <input
               type="text"
               value={lat}
@@ -66,7 +66,7 @@ const MapComponent = () => {
             />
           </label>
           <label>
-            Longitude:
+            <div className="label">Longitude:</div>
             <input
               type="text"
               value={lng}
