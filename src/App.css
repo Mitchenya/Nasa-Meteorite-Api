@@ -1,15 +1,14 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
 .app {
   border: 2px solid red;
-}
+  width: 100%;
+  margin: 0;
 
 .header {
-  border: 2px solid blue;
-}
-
-.meteorSearch {
-  border: 2px solid yellow;
-}
-
-.meteorList {
-  border: 2px solid green;
+  border-radius: 5px 5px 5px 5px;
+  height: 50px;
 }
