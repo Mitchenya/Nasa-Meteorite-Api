@@ -39,30 +39,41 @@ const MapComponent = () => {
   };
 
   return (
-    <div>
-      <form onSubmit={handleSearch} style={{ marginBottom: "20px" }}>
-        <label>
-          Latitude:
-          <input
-            type="text"
-            value={lat}
-            onChange={(e) => setLat(e.target.value)}
-          />
-        </label>
-        <label>
-          Longitude:
-          <input
-            type="text"
-            value={lng}
-            onChange={(e) => setLng(e.target.value)}
-          />
-        </label>
-        <button type="submit">Go to Location</button>
-      </form>
+    <div className="map">
       <div
+        className="map-container"
         ref={mapContainer}
         style={{ width: "600px", height: "400px", margin: "0 auto" }}
       />
+      <form
+        className="search"
+        onSubmit={handleSearch}
+        style={{ marginBottom: "20px" }}
+      >
+        <div className="label">
+          <label>
+            Latitude:
+            <input
+              type="text"
+              value={lat}
+              onChange={(e) => setLat(e.target.value)}
+            />
+          </label>
+          <label>
+            Longitude:
+            <input
+              type="text"
+              value={lng}
+              onChange={(e) => setLng(e.target.value)}
+            />
+          </label>
+        </div>
+        <section>
+          <button className="button" role="button">
+            Go to Location
+          </button>
+        </section>
+      </form>
     </div>
   );
 };

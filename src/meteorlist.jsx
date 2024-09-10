@@ -10,7 +10,7 @@ const MeteorList = () => {
 
   useEffect(() => {
     setIsLoading(true);
-    fetch(`https://data.nasa.gov/resource/gh4g-9sfh.json?$limit=10`)
+    fetch(`https://data.nasa.gov/resource/gh4g-9sfh.json?$limit=7`)
       .then((response) => {
         return response.json();
       })
@@ -46,7 +46,9 @@ const MeteorList = () => {
 
   return (
     <div className="meteor-list">
-      <label htmlFor="sort-direction">Sort by name:</label>
+      <label className="a-z" htmlFor="sort-direction">
+        Sort by name:
+      </label>
       <select
         id="sort-direction"
         onChange={(e) => sortByName(e.target.value)}

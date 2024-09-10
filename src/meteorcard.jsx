@@ -1,6 +1,7 @@
 /* eslint-disable react/prop-types */
 const MeteorCard = ({ meteor: { name, mass, year, geolocation } }) => {
-  const yearDiscovered = year.substring(0, 4);
+  console.log(geolocation);
+  const yearDiscovered = year ? year.substring(0, 4) : "Unknown";
 
   return (
     <li className="meteor-card">
@@ -8,7 +9,10 @@ const MeteorCard = ({ meteor: { name, mass, year, geolocation } }) => {
       <p>Mass: {mass}</p>
       <p>Year Discovered: {yearDiscovered}</p>
       <p>
-        Geo Location: {geolocation.latitude}N {geolocation.longitude}E
+        Geo Location:{" "}
+        {geolocation.latitude && geolocation.longitude === "0.0"
+          ? "Unknown"
+          : `${geolocation.latitude}N ${geolocation.longitude}E`}
       </p>
     </li>
   );
