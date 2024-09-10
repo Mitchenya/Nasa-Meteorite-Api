@@ -40,6 +40,12 @@ const MapComponent = () => {
 
   return (
     <div className="map">
+      <div>
+        <h3 className="map-title">
+          Enter a Lat & Long to Visit a Meteors Location
+        </h3>
+        <h3 className="map-title">or Just Find Your Home.</h3>
+      </div>
       <div
         className="map-container"
         ref={mapContainer}
